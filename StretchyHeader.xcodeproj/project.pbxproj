@@ -12,6 +12,8 @@
 		E10E5238227CB2A100501EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10E5236227CB2A100501EDF /* Main.storyboard */; };
 		E10E523A227CB2A400501EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10E5239227CB2A400501EDF /* Assets.xcassets */; };
 		E10E523D227CB2A400501EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10E523B227CB2A400501EDF /* LaunchScreen.storyboard */; };
+		E148F1F522D65ABC00D35395 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E148F1F422D65ABC00D35395 /* NewsItem.swift */; };
+		E148F1F722D6615400D35395 /* NewsItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E148F1F622D6615400D35395 /* NewsItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E10E5239227CB2A400501EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10E523C227CB2A400501EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E10E523E227CB2A400501EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E148F1F422D65ABC00D35395 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		E148F1F622D6615400D35395 /* NewsItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		E10E5231227CB2A000501EDF /* StretchyHeader */ = {
 			isa = PBXGroup;
 			children = (
-				E10E5232227CB2A000501EDF /* AppDelegate.swift */,
+				E148F1F922D6925500D35395 /* App */,
+				E148F1F822D6924A00D35395 /* Model */,
 				E10E5234227CB2A100501EDF /* ViewController.swift */,
+				E148F1F622D6615400D35395 /* NewsItemTableViewCell.swift */,
+				E148F1FA22D6926C00D35395 /* Resources */,
+			);
+			path = StretchyHeader;
+			sourceTree = "<group>";
+		};
+		E148F1F822D6924A00D35395 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E148F1F422D65ABC00D35395 /* NewsItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E148F1F922D6925500D35395 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E10E5232227CB2A000501EDF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E148F1FA22D6926C00D35395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E10E5236227CB2A100501EDF /* Main.storyboard */,
 				E10E5239227CB2A400501EDF /* Assets.xcassets */,
 				E10E523B227CB2A400501EDF /* LaunchScreen.storyboard */,
 				E10E523E227CB2A400501EDF /* Info.plist */,
 			);
-			path = StretchyHeader;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10E5235227CB2A100501EDF /* ViewController.swift in Sources */,
+				E148F1F722D6615400D35395 /* NewsItemTableViewCell.swift in Sources */,
+				E148F1F522D65ABC00D35395 /* NewsItem.swift in Sources */,
 				E10E5233227CB2A000501EDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +315,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StretchyHeader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StretchyHeader/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +333,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StretchyHeader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StretchyHeader/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
