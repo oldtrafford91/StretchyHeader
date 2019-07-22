@@ -1,7 +1,7 @@
 # Stretchy Header
 
 <p align="center">
-  
+  <img src="https://github.com/oldtrafford91/StretchyHeader/blob/master/screenshot.gif" />
   ![](https://github.com/oldtrafford91/StretchyHeader/blob/master/screenshot.gif)
   
 </p>
