@@ -1,6 +1,12 @@
 # Stretchy Header
 
-![](https://github.com/oldtrafford91/StretchyHeader/blob/master/screenshot.gif)
+<p align="center">
+  
+  ![](https://github.com/oldtrafford91/StretchyHeader/blob/master/screenshot.gif)
+  
+</p>
+
+
 
 
 # Lesson Learned
